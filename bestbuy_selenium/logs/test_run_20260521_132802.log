@@ -1,0 +1,81 @@
+2026-05-21 13:29:36 | INFO     | tests.test_e2e_search_journey | [E2E Step 1] URL: https://www.bestbuy.com/
+2026-05-21 13:29:36 | INFO     | tests.test_e2e_search_journey | [E2E Step 1] Title: Best Buy | Official Online Store | Shop Now & Save
+2026-05-21 13:29:36 | INFO     | tests.test_e2e_search_journey | [E2E Step 2] Attempting login …
+2026-05-21 13:29:36 | INFO     | pages.login_page | Navigating to Best Buy sign-in page …
+2026-05-21 13:29:42 | INFO     | pages.login_page | Sign-in page loaded.
+2026-05-21 13:29:42 | INFO     | pages.login_page | Entering email: your_email@example.com
+2026-05-21 13:29:42 | INFO     | pages.login_page | Entering password …
+2026-05-21 13:30:03 | ERROR    | pages.login_page | Login failed with exception: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff786eda8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff786eda950+14eb0]
+	chromedriver!(No symbol) [0x7ff786c4d6ed]
+	chromedriver!(No symbol) [0x7ff786ca6cfe]
+	chromedriver!(No symbol) [0x7ff786ca700c]
+	chromedriver!(No symbol) [0x7ff786cf7cb7]
+	chromedriver!(No symbol) [0x7ff786cf483b]
+	chromedriver!(No symbol) [0x7ff786c990e8]
+	chromedriver!(No symbol) [0x7ff786c99fc3]
+	chromedriver!GetHandleVerifier [0x7ff7871f0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff7871ea715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff78720c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff786ef7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff786f0087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff786ee40e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff786ee4296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff786ec8737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffc2a65e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc2b44427c+2c]
+
+2026-05-21 13:30:03 | WARNING  | tests.test_e2e_search_journey | [E2E Step 2] Login failed — continuing as guest. Update email/password in config/test_data.json.
+2026-05-21 13:31:33 | INFO     | tests.test_e2e_search_journey | [E2E Step 3] Searching for 'laptop' …
+2026-05-21 13:31:33 | INFO     | pages.search_page | Searching for: 'laptop'
+2026-05-21 13:31:40 | INFO     | pages.search_page | Search submitted for: 'laptop'
+2026-05-21 13:31:41 | INFO     | tests.test_e2e_search_journey | [E2E Step 4] URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=laptop
+2026-05-21 13:31:41 | INFO     | tests.test_e2e_search_journey | [E2E Step 4] Title: laptop - Best Buy
+2026-05-21 13:31:54 | INFO     | tests.test_e2e_search_journey | [E2E Step 5] Page 1: 37 results
+2026-05-21 13:31:55 | INFO     | tests.test_e2e_search_journey | [E2E Step 6] Adding first available item to cart …
+2026-05-21 13:31:55 | INFO     | pages.search_page | Found 8 Add to Cart buttons on results page.
+2026-05-21 13:31:55 | INFO     | pages.search_page | Clicking Add to Cart button 1: 'add to cart'
+2026-05-21 13:31:57 | INFO     | pages.search_page | Add to Cart clicked successfully.
+2026-05-21 13:31:58 | INFO     | tests.test_e2e_search_journey | [E2E Step 6] Item added to cart successfully.
+2026-05-21 13:31:58 | INFO     | tests.test_e2e_search_journey | 
+==================================================
+E2E SUMMARY
+Query           : laptop
+Login succeeded : False
+Page 1 results  : 37
+Item added      : True
+
+==================================================
+2026-05-21 13:31:59 | INFO     | tests.test_e2e_search_journey | E2E TEST PASSED — Login → Search → Add to Cart.
+2026-05-21 13:33:38 | INFO     | pages.search_page | Searching for: 'laptop'
+2026-05-21 13:33:54 | INFO     | pages.search_page | Search submitted for: 'laptop'
+2026-05-21 13:33:54 | INFO     | tests.test_search | Current URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=laptop
+2026-05-21 13:33:56 | INFO     | tests.test_search | Results found: 37
+2026-05-21 13:33:56 | INFO     | tests.test_search | TC_POS_01 PASSED — valid search returns results.
+2026-05-21 13:35:33 | INFO     | pages.search_page | Searching for: 'Samsung TV'
+2026-05-21 13:35:49 | INFO     | pages.search_page | Search submitted for: 'Samsung TV'
+2026-05-21 13:35:50 | INFO     | tests.test_search | Fetched 4 result titles.
+2026-05-21 13:35:50 | INFO     | tests.test_search | Matching: 4/4 (100%)
+2026-05-21 13:35:51 | INFO     | tests.test_search | TC_POS_02 PASSED — result titles match query.
+2026-05-21 13:37:30 | INFO     | pages.search_page | Searching for: 'headphones'
+2026-05-21 13:37:44 | INFO     | pages.search_page | Search submitted for: 'headphones'
+2026-05-21 13:37:46 | INFO     | tests.test_search | Search bar retained: 'headphones'
+2026-05-21 13:37:46 | INFO     | tests.test_search | TC_POS_03 PASSED — search bar retains typed query.
+2026-05-21 13:39:25 | INFO     | pages.search_page | Searching for: 'xyzabc123notaproduct'
+2026-05-21 13:39:40 | INFO     | pages.search_page | Search submitted for: 'xyzabc123notaproduct'
+2026-05-21 13:39:41 | INFO     | tests.test_search | Title: xyzabc123notaproduct - Best Buy | URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=xyzabc123notaproduct
+2026-05-21 13:40:05 | INFO     | tests.test_search | Results: 24 | No-results msg: False
+2026-05-21 13:40:05 | INFO     | tests.test_search | TC_POS_04 PASSED — gibberish query handled gracefully.
+2026-05-21 13:41:44 | INFO     | pages.login_page | Navigating to Best Buy sign-in page …
+2026-05-21 13:41:50 | INFO     | pages.login_page | Sign-in page loaded.
+2026-05-21 13:41:50 | INFO     | pages.login_page | Entering email: invalid_user@example.com
+2026-05-21 13:41:50 | INFO     | pages.login_page | Clicking Sign In button …
+2026-05-21 13:43:08 | INFO     | tests.test_search | Error shown: False | URL: https://www.bestbuy.com/identity/signin/referCreate?token=tid%3Ab4cfd376-54ec-11f1-a8c1-0674357984c9 | Logged in: False
+2026-05-21 13:43:08 | INFO     | tests.test_search | TC_NEG_01 PASSED — invalid credentials correctly rejected.
+2026-05-21 13:44:47 | INFO     | pages.search_page | Searching for: '!@#$%'
+2026-05-21 13:45:16 | INFO     | pages.search_page | Search submitted for: '!@#$%'
+2026-05-21 13:45:16 | INFO     | tests.test_search | Title: !@#$% - Best Buy | URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=!%40%23%24%25
+2026-05-21 13:45:38 | INFO     | tests.test_search | No-results msg: True | Items: 0
+2026-05-21 13:45:38 | INFO     | tests.test_search | TC_NEG_02 PASSED — special characters handled gracefully.

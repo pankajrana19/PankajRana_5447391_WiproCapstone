@@ -1,0 +1,27 @@
+2026-05-21 13:37:53 | INFO     | conftest | ============================================================
+2026-05-21 13:37:53 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:37:53 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:37:53 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:37:55 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:37:55 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:37:55 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:38:11 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:38:22 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:38:32 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:38:43 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:38:54 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:39:04 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:39:04 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:39:15 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:39:25 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:39:25 | INFO     | pages.search_page | Searching for: 'xyzabc123notaproduct'
+2026-05-21 13:39:40 | INFO     | pages.search_page | Search submitted for: 'xyzabc123notaproduct'
+2026-05-21 13:39:40 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_POS_04_after_gibberish_search_20260521_133940_611154.png
+2026-05-21 13:39:41 | INFO     | tests.test_search | Title: xyzabc123notaproduct - Best Buy | URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=xyzabc123notaproduct
+2026-05-21 13:40:05 | INFO     | tests.test_search | Results: 24 | No-results msg: False
+2026-05-21 13:40:05 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_04_gibberish_results_20260521_134005_035215.png
+2026-05-21 13:40:05 | INFO     | tests.test_search | TC_POS_04 PASSED — gibberish query handled gracefully.
+2026-05-21 13:40:05 | INFO     | conftest | TEST PASSED: test_gibberish_query_returns_results
+2026-05-21 13:40:05 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_gibberish_query_returns_results_20260521_134005_295849.png
+2026-05-21 13:40:05 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:40:08 | INFO     | conftest | WebDriver closed.

@@ -1,0 +1,31 @@
+2026-05-21 13:40:12 | INFO     | conftest | ============================================================
+2026-05-21 13:40:12 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:40:12 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:40:12 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:40:13 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:40:13 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:40:13 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:40:30 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:40:40 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:40:51 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:41:01 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:41:12 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:41:23 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:41:23 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:41:33 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:41:44 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:41:44 | INFO     | pages.login_page | Navigating to Best Buy sign-in page …
+2026-05-21 13:41:44 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com/identity/global/signin
+2026-05-21 13:41:50 | INFO     | pages.login_page | Sign-in page loaded.
+2026-05-21 13:41:50 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_login_page_20260521_134150_003488.png
+2026-05-21 13:41:50 | INFO     | pages.login_page | Entering email: invalid_user@example.com
+2026-05-21 13:41:50 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_email_entered_20260521_134150_622729.png
+2026-05-21 13:41:50 | INFO     | pages.login_page | Clicking Sign In button …
+2026-05-21 13:41:54 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_after_email_continue_20260521_134154_079192.png
+2026-05-21 13:43:08 | INFO     | tests.test_search | Error shown: False | URL: https://www.bestbuy.com/identity/signin/referCreate?token=tid%3Ab4cfd376-54ec-11f1-a8c1-0674357984c9 | Logged in: False
+2026-05-21 13:43:08 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_final_error_check_20260521_134308_092542.png
+2026-05-21 13:43:08 | INFO     | tests.test_search | TC_NEG_01 PASSED — invalid credentials correctly rejected.
+2026-05-21 13:43:08 | INFO     | conftest | TEST PASSED: test_invalid_login_credentials
+2026-05-21 13:43:08 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_invalid_login_credentials_20260521_134308_246600.png
+2026-05-21 13:43:08 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:43:10 | INFO     | conftest | WebDriver closed.

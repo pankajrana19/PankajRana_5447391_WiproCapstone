@@ -1,0 +1,4 @@
+Query           : laptop
+Login succeeded : False
+Page 1 results  : 37
+Item added      : True

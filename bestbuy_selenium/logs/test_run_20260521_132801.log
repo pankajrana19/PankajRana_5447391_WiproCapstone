@@ -1,0 +1,189 @@
+2026-05-21 13:28:02 | INFO     | conftest | ============================================================
+2026-05-21 13:28:02 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:28:02 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:28:02 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:28:04 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:28:04 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:28:04 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:28:22 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:28:32 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:28:43 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:28:53 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:29:04 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:29:14 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:29:14 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:29:25 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:29:36 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:29:36 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:29:36 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_01_homepage_loaded_20260521_132936_190079.png
+2026-05-21 13:29:36 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com/identity/global/signin
+2026-05-21 13:29:42 | DEBUG    | pages.base_page | Typed 'your_email@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+2026-05-21 13:30:03 | WARNING  | pages.base_page | Element not visible after 15s: ('css selector', "#fld-p1, input[type='password'], input[name='password'], [data-testid='password-input']")
+2026-05-21 13:30:03 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_02_after_login_20260521_133003_845106.png
+2026-05-21 13:30:03 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:30:03 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:30:19 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:30:30 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:30:40 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:30:51 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:31:01 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:31:12 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:31:12 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:31:22 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:31:33 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:31:33 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:31:40 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_03_search_submitted_20260521_133140_609932.png
+2026-05-21 13:31:41 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_04_results_page_20260521_133141_101044.png
+2026-05-21 13:31:55 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_05_results_present_20260521_133154_864417.png
+2026-05-21 13:31:58 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_06_add_to_cart_clicked_20260521_133157_907691.png
+2026-05-21 13:31:58 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_06_item_added_20260521_133158_552530.png
+2026-05-21 13:31:59 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_07_journey_complete_20260521_133158_896049.png
+2026-05-21 13:31:59 | INFO     | conftest | TEST PASSED: test_e2e_full_search_journey
+2026-05-21 13:31:59 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_e2e_full_search_journey_20260521_133159_215648.png
+2026-05-21 13:31:59 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:32:02 | INFO     | conftest | WebDriver closed.
+2026-05-21 13:32:06 | INFO     | conftest | ============================================================
+2026-05-21 13:32:06 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:32:06 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:32:06 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:32:08 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:32:08 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:32:08 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:32:24 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:32:34 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:32:45 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:32:55 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:33:06 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:33:17 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:33:17 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:33:27 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:33:38 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:33:38 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:33:54 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_POS_01_after_search_20260521_133354_034394.png
+2026-05-21 13:33:56 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_01_results_20260521_133356_307869.png
+2026-05-21 13:33:56 | INFO     | conftest | TEST PASSED: test_valid_search_returns_results
+2026-05-21 13:33:56 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_valid_search_returns_results_20260521_133356_601385.png
+2026-05-21 13:33:56 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:33:59 | INFO     | conftest | WebDriver closed.
+2026-05-21 13:34:03 | INFO     | conftest | ============================================================
+2026-05-21 13:34:03 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:34:03 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:34:03 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:34:05 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:34:05 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:34:05 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:34:19 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:34:30 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:34:41 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:34:51 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:35:02 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:35:12 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:35:12 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:35:23 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:35:33 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:35:33 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:35:49 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_POS_02_search_submitted_20260521_133549_387851.png
+2026-05-21 13:35:50 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_02_titles_check_20260521_133550_727772.png
+2026-05-21 13:35:51 | INFO     | conftest | TEST PASSED: test_result_titles_match_query
+2026-05-21 13:35:51 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_result_titles_match_query_20260521_133551_046180.png
+2026-05-21 13:35:51 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:35:54 | INFO     | conftest | WebDriver closed.
+2026-05-21 13:35:58 | INFO     | conftest | ============================================================
+2026-05-21 13:35:58 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:35:58 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:35:58 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:35:59 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:35:59 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:35:59 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:36:16 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:36:26 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:36:37 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:36:47 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:36:58 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:37:08 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:37:08 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:37:19 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:37:29 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:37:29 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:37:45 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_POS_03_after_search_20260521_133744_959102.png
+2026-05-21 13:37:46 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_03_input_retained_20260521_133746_175936.png
+2026-05-21 13:37:46 | INFO     | conftest | TEST PASSED: test_search_bar_retains_query
+2026-05-21 13:37:46 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_search_bar_retains_query_20260521_133746_479367.png
+2026-05-21 13:37:46 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:37:49 | INFO     | conftest | WebDriver closed.
+2026-05-21 13:37:53 | INFO     | conftest | ============================================================
+2026-05-21 13:37:53 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:37:53 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:37:53 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:37:55 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:37:55 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:37:55 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:38:11 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:38:22 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:38:32 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:38:43 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:38:54 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:39:04 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:39:04 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:39:15 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:39:25 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:39:25 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:39:40 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_POS_04_after_gibberish_search_20260521_133940_611154.png
+2026-05-21 13:40:05 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_04_gibberish_results_20260521_134005_035215.png
+2026-05-21 13:40:05 | INFO     | conftest | TEST PASSED: test_gibberish_query_returns_results
+2026-05-21 13:40:05 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_gibberish_query_returns_results_20260521_134005_295849.png
+2026-05-21 13:40:05 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:40:08 | INFO     | conftest | WebDriver closed.
+2026-05-21 13:40:12 | INFO     | conftest | ============================================================
+2026-05-21 13:40:12 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:40:12 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:40:12 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:40:13 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:40:13 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:40:13 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:40:30 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:40:40 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:40:51 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:41:01 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:41:12 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:41:23 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:41:23 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:41:33 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:41:44 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:41:44 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:41:44 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com/identity/global/signin
+2026-05-21 13:41:50 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_login_page_20260521_134150_003488.png
+2026-05-21 13:41:50 | DEBUG    | pages.base_page | Typed 'invalid_user@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+2026-05-21 13:41:50 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_email_entered_20260521_134150_622729.png
+2026-05-21 13:41:51 | DEBUG    | pages.base_page | Clicked: ('css selector', "button[data-testid='sign-in-button'], button[type='submit'], .cia-form__controls__submit, button.btn-primary")
+2026-05-21 13:41:54 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_after_email_continue_20260521_134154_079192.png
+2026-05-21 13:43:08 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_final_error_check_20260521_134308_092542.png
+2026-05-21 13:43:08 | INFO     | conftest | TEST PASSED: test_invalid_login_credentials
+2026-05-21 13:43:08 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_invalid_login_credentials_20260521_134308_246600.png
+2026-05-21 13:43:08 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:43:10 | INFO     | conftest | WebDriver closed.
+2026-05-21 13:43:15 | INFO     | conftest | ============================================================
+2026-05-21 13:43:15 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:43:15 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:43:15 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:43:16 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:43:16 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:43:16 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:43:33 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:43:44 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:43:54 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:44:05 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:44:16 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:44:26 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:44:26 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:44:37 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:44:47 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:44:47 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 13:45:16 | WARNING  | pages.base_page | Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+2026-05-21 13:45:16 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_02_after_search_20260521_134516_339732.png
+2026-05-21 13:45:38 | WARNING  | pages.base_page | Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+2026-05-21 13:45:38 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_02_graceful_handling_20260521_134538_163972.png
+2026-05-21 13:45:38 | INFO     | conftest | TEST PASSED: test_special_characters_search
+2026-05-21 13:45:38 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_special_characters_search_20260521_134538_387321.png
+2026-05-21 13:45:38 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:45:41 | INFO     | conftest | WebDriver closed.

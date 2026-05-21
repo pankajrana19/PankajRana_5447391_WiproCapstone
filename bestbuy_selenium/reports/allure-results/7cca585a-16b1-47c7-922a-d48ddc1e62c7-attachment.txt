@@ -1,0 +1,93 @@
+[32mINFO    [0m conftest:conftest.py:25 ============================================================
+[32mINFO    [0m conftest:conftest.py:26 Setting up WebDriver …
+[32mINFO    [0m utils.driver_factory:driver_factory.py:20 Initialising Chrome WebDriver …
+[32mINFO    [0m utils.driver_factory:driver_factory.py:21 ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+[32mINFO    [0m utils.driver_factory:driver_factory.py:69 Chrome WebDriver initialised successfully.
+[32mINFO    [0m pages.home_page:home_page.py:64 Opening Best Buy home page …
+[32mINFO    [0m pages.base_page:base_page.py:34 Navigating to: https://www.bestbuy.com
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', '.us-link')
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+[32mINFO    [0m pages.home_page:home_page.py:88 No country-selection modal detected — proceeding directly.
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+[35mDEBUG   [0m pages.home_page:home_page.py:103 No feedback popup detected.
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:69 [E2E Step 1] URL: https://www.bestbuy.com/
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:70 [E2E Step 1] Title: Best Buy | Official Online Store | Shop Now & Save
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\pass_E2E_01_homepage_loaded_20260521_132936_190079.png
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:79 [E2E Step 2] Attempting login …
+[32mINFO    [0m pages.login_page:login_page.py:96 Navigating to Best Buy sign-in page …
+[32mINFO    [0m pages.base_page:base_page.py:34 Navigating to: https://www.bestbuy.com/identity/global/signin
+[32mINFO    [0m pages.login_page:login_page.py:99 Sign-in page loaded.
+[32mINFO    [0m pages.login_page:login_page.py:102 Entering email: your_email@example.com
+[35mDEBUG   [0m pages.base_page:base_page.py:116 Typed 'your_email@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+[32mINFO    [0m pages.login_page:login_page.py:106 Entering password …
+[33mWARNING [0m pages.base_page:base_page.py:53 Element not visible after 15s: ('css selector', "#fld-p1, input[type='password'], input[name='password'], [data-testid='password-input']")
+[1m[31mERROR   [0m pages.login_page:login_page.py:164 Login failed with exception: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff786eda8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff786eda950+14eb0]
+	chromedriver!(No symbol) [0x7ff786c4d6ed]
+	chromedriver!(No symbol) [0x7ff786ca6cfe]
+	chromedriver!(No symbol) [0x7ff786ca700c]
+	chromedriver!(No symbol) [0x7ff786cf7cb7]
+	chromedriver!(No symbol) [0x7ff786cf483b]
+	chromedriver!(No symbol) [0x7ff786c990e8]
+	chromedriver!(No symbol) [0x7ff786c99fc3]
+	chromedriver!GetHandleVerifier [0x7ff7871f0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff7871ea715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff78720c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff786ef7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff786f0087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff786ee40e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff786ee4296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff786ec8737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffc2a65e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc2b44427c+2c]
+
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\info_E2E_02_after_login_20260521_133003_845106.png
+[33mWARNING [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:92 [E2E Step 2] Login failed — continuing as guest. Update email/password in config/test_data.json.
+[32mINFO    [0m pages.home_page:home_page.py:64 Opening Best Buy home page …
+[32mINFO    [0m pages.base_page:base_page.py:34 Navigating to: https://www.bestbuy.com
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', '.us-link')
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+[32mINFO    [0m pages.home_page:home_page.py:88 No country-selection modal detected — proceeding directly.
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+[35mDEBUG   [0m pages.home_page:home_page.py:103 No feedback popup detected.
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:105 [E2E Step 3] Searching for 'laptop' …
+[32mINFO    [0m pages.search_page:search_page.py:121 Searching for: 'laptop'
+[32mINFO    [0m pages.search_page:search_page.py:129 Search submitted for: 'laptop'
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\info_E2E_03_search_submitted_20260521_133140_609932.png
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:113 [E2E Step 4] URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=laptop
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:114 [E2E Step 4] Title: laptop - Best Buy
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\pass_E2E_04_results_page_20260521_133141_101044.png
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:127 [E2E Step 5] Page 1: 37 results
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\pass_E2E_05_results_present_20260521_133154_864417.png
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:140 [E2E Step 6] Adding first available item to cart …
+[32mINFO    [0m pages.search_page:search_page.py:277 Found 8 Add to Cart buttons on results page.
+[32mINFO    [0m pages.search_page:search_page.py:293 Clicking Add to Cart button 1: 'add to cart'
+[32mINFO    [0m pages.search_page:search_page.py:297 Add to Cart clicked successfully.
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\info_E2E_06_add_to_cart_clicked_20260521_133157_907691.png
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:147 [E2E Step 6] Item added to cart successfully.
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\pass_E2E_06_item_added_20260521_133158_552530.png
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:158 
+==================================================
+E2E SUMMARY
+Query           : laptop
+Login succeeded : False
+Page 1 results  : 37
+Item added      : True
+
+==================================================
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\pass_E2E_07_journey_complete_20260521_133158_896049.png
+[32mINFO    [0m tests.test_e2e_search_journey:test_e2e_search_journey.py:166 E2E TEST PASSED — Login → Search → Add to Cart.
+[32mINFO    [0m conftest:conftest.py:39 Tearing down WebDriver …
+[32mINFO    [0m conftest:conftest.py:41 WebDriver closed.

@@ -1,0 +1,27 @@
+2026-05-21 13:32:06 | INFO     | conftest | ============================================================
+2026-05-21 13:32:06 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:32:06 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:32:06 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:32:08 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:32:08 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:32:08 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:32:24 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:32:34 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:32:45 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:32:55 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:33:06 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:33:17 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:33:17 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:33:27 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:33:38 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:33:38 | INFO     | pages.search_page | Searching for: 'laptop'
+2026-05-21 13:33:54 | INFO     | pages.search_page | Search submitted for: 'laptop'
+2026-05-21 13:33:54 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_POS_01_after_search_20260521_133354_034394.png
+2026-05-21 13:33:54 | INFO     | tests.test_search | Current URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=laptop
+2026-05-21 13:33:56 | INFO     | tests.test_search | Results found: 37
+2026-05-21 13:33:56 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_01_results_20260521_133356_307869.png
+2026-05-21 13:33:56 | INFO     | tests.test_search | TC_POS_01 PASSED — valid search returns results.
+2026-05-21 13:33:56 | INFO     | conftest | TEST PASSED: test_valid_search_returns_results
+2026-05-21 13:33:56 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_valid_search_returns_results_20260521_133356_601385.png
+2026-05-21 13:33:56 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:33:59 | INFO     | conftest | WebDriver closed.

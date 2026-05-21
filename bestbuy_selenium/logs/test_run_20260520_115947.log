@@ -1,0 +1,95 @@
+2026-05-20 11:59:47 | INFO     | conftest | ============================================================
+2026-05-20 11:59:47 | INFO     | conftest | Setting up WebDriver …
+2026-05-20 11:59:47 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-20 11:59:47 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-20 11:59:50 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-20 11:59:50 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-20 11:59:50 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-20 12:00:09 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-20 12:00:19 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-20 12:00:30 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-20 12:00:41 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-20 12:00:51 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-20 12:01:02 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-20 12:01:02 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-20 12:01:12 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-20 12:01:23 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-20 12:01:23 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-20 12:01:23 | INFO     | tests.test_e2e_search_journey | [E2E Step 1] URL: https://www.bestbuy.com/
+2026-05-20 12:01:23 | INFO     | tests.test_e2e_search_journey | [E2E Step 1] Title: Best Buy | Official Online Store | Shop Now & Save
+2026-05-20 12:01:23 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_01_homepage_loaded_20260520_120123_328073.png
+2026-05-20 12:01:23 | INFO     | tests.test_e2e_search_journey | [E2E Step 2] Attempting login …
+2026-05-20 12:01:23 | INFO     | pages.login_page | Navigating to Best Buy sign-in page …
+2026-05-20 12:01:23 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com/identity/global/signin
+2026-05-20 12:01:29 | INFO     | pages.login_page | Sign-in page loaded.
+2026-05-20 12:01:29 | INFO     | pages.login_page | Entering email: your_email@example.com
+2026-05-20 12:01:30 | DEBUG    | pages.base_page | Typed 'your_email@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+2026-05-20 12:01:30 | INFO     | pages.login_page | Entering password …
+2026-05-20 12:01:51 | WARNING  | pages.base_page | Element not visible after 15s: ('css selector', "#fld-p1, input[type='password'], input[name='password'], [data-testid='password-input']")
+2026-05-20 12:01:51 | ERROR    | pages.login_page | Login failed with exception: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff71d8fa8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff71d8fa950+14eb0]
+	chromedriver!(No symbol) [0x7ff71d66d6ed]
+	chromedriver!(No symbol) [0x7ff71d6c6cfe]
+	chromedriver!(No symbol) [0x7ff71d6c700c]
+	chromedriver!(No symbol) [0x7ff71d717cb7]
+	chromedriver!(No symbol) [0x7ff71d71483b]
+	chromedriver!(No symbol) [0x7ff71d6b90e8]
+	chromedriver!(No symbol) [0x7ff71d6b9fc3]
+	chromedriver!GetHandleVerifier [0x7ff71dc10149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff71dc0a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff71dc2c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff71d917cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff71d92087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff71d9040e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff71d904296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff71d8e8737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffc2a65e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc2b44427c+2c]
+
+2026-05-20 12:01:51 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_02_after_login_20260520_120151_120999.png
+2026-05-20 12:01:51 | WARNING  | tests.test_e2e_search_journey | [E2E Step 2] Login failed — continuing as guest. Update email/password in config/test_data.json.
+2026-05-20 12:01:51 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-20 12:01:51 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-20 12:02:05 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-20 12:02:16 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-20 12:02:26 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-20 12:02:37 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-20 12:02:47 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-20 12:02:58 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-20 12:02:58 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-20 12:03:09 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-20 12:03:19 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-20 12:03:19 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-20 12:03:19 | INFO     | tests.test_e2e_search_journey | [E2E Step 3] Searching for 'laptop' …
+2026-05-20 12:03:19 | INFO     | pages.search_page | Searching for: 'laptop'
+2026-05-20 12:03:32 | INFO     | pages.search_page | Search submitted for: 'laptop'
+2026-05-20 12:03:33 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_03_search_submitted_20260520_120332_840857.png
+2026-05-20 12:03:33 | INFO     | tests.test_e2e_search_journey | [E2E Step 4] URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=laptop
+2026-05-20 12:03:33 | INFO     | tests.test_e2e_search_journey | [E2E Step 4] Title: laptop - Best Buy
+2026-05-20 12:03:33 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_04_results_page_20260520_120333_256538.png
+2026-05-20 12:03:35 | INFO     | tests.test_e2e_search_journey | [E2E Step 5] Page 1: 37 results
+2026-05-20 12:03:35 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_05_results_present_20260520_120335_026820.png
+2026-05-20 12:03:35 | INFO     | tests.test_e2e_search_journey | [E2E Step 6] Adding first available item to cart …
+2026-05-20 12:03:35 | INFO     | pages.search_page | Found 8 Add to Cart buttons on results page.
+2026-05-20 12:03:35 | INFO     | pages.search_page | Clicking Add to Cart button 1: 'add to cart'
+2026-05-20 12:03:37 | INFO     | pages.search_page | Add to Cart clicked successfully.
+2026-05-20 12:03:38 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_06_add_to_cart_clicked_20260520_120337_949010.png
+2026-05-20 12:03:38 | INFO     | tests.test_e2e_search_journey | [E2E Step 6] Item added to cart successfully.
+2026-05-20 12:03:38 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_06_item_added_20260520_120338_554311.png
+2026-05-20 12:03:38 | INFO     | tests.test_e2e_search_journey | 
+==================================================
+E2E SUMMARY
+Query           : laptop
+Login succeeded : False
+Page 1 results  : 37
+Item added      : True
+
+==================================================
+2026-05-20 12:03:38 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_07_journey_complete_20260520_120338_806944.png
+2026-05-20 12:03:38 | INFO     | tests.test_e2e_search_journey | E2E TEST PASSED — Login → Search → Add to Cart.
+2026-05-20 12:03:38 | INFO     | conftest | TEST PASSED: test_e2e_full_search_journey
+2026-05-20 12:03:39 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_e2e_full_search_journey_20260520_120338_999566.png
+2026-05-20 12:03:39 | INFO     | conftest | Tearing down WebDriver …
+2026-05-20 12:03:42 | INFO     | conftest | WebDriver closed.

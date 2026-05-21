@@ -1,0 +1,28 @@
+[32mINFO    [0m conftest:conftest.py:25 ============================================================
+[32mINFO    [0m conftest:conftest.py:26 Setting up WebDriver …
+[32mINFO    [0m utils.driver_factory:driver_factory.py:20 Initialising Chrome WebDriver …
+[32mINFO    [0m utils.driver_factory:driver_factory.py:21 ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+[32mINFO    [0m utils.driver_factory:driver_factory.py:69 Chrome WebDriver initialised successfully.
+[32mINFO    [0m pages.home_page:home_page.py:64 Opening Best Buy home page …
+[32mINFO    [0m pages.base_page:base_page.py:34 Navigating to: https://www.bestbuy.com
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', '.us-link')
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+[32mINFO    [0m pages.home_page:home_page.py:88 No country-selection modal detected — proceeding directly.
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+[35mDEBUG   [0m pages.home_page:home_page.py:103 No feedback popup detected.
+[32mINFO    [0m pages.search_page:search_page.py:121 Searching for: '!@#$%'
+[33mWARNING [0m pages.base_page:base_page.py:90 Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+[32mINFO    [0m pages.search_page:search_page.py:129 Search submitted for: '!@#$%'
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\info_TC_NEG_02_after_search_20260521_134516_339732.png
+[32mINFO    [0m tests.test_search:test_search.py:317 Title: !@#$% - Best Buy | URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=!%40%23%24%25
+[33mWARNING [0m pages.base_page:base_page.py:90 Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+[32mINFO    [0m tests.test_search:test_search.py:328 No-results msg: True | Items: 0
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\pass_TC_NEG_02_graceful_handling_20260521_134538_163972.png
+[32mINFO    [0m tests.test_search:test_search.py:333 TC_NEG_02 PASSED — special characters handled gracefully.
+[32mINFO    [0m conftest:conftest.py:39 Tearing down WebDriver …
+[32mINFO    [0m conftest:conftest.py:41 WebDriver closed.

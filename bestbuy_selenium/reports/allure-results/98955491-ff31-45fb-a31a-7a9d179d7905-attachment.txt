@@ -1,0 +1,1 @@
+Login: SKIPPED (invalid/missing credentials) — running as guest.

@@ -1,0 +1,32 @@
+[32mINFO    [0m conftest:conftest.py:25 ============================================================
+[32mINFO    [0m conftest:conftest.py:26 Setting up WebDriver …
+[32mINFO    [0m utils.driver_factory:driver_factory.py:20 Initialising Chrome WebDriver …
+[32mINFO    [0m utils.driver_factory:driver_factory.py:21 ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+[32mINFO    [0m utils.driver_factory:driver_factory.py:69 Chrome WebDriver initialised successfully.
+[32mINFO    [0m pages.home_page:home_page.py:64 Opening Best Buy home page …
+[32mINFO    [0m pages.base_page:base_page.py:34 Navigating to: https://www.bestbuy.com
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('css selector', '.us-link')
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+[32mINFO    [0m pages.home_page:home_page.py:88 No country-selection modal detected — proceeding directly.
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+[33mWARNING [0m pages.base_page:base_page.py:64 Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+[35mDEBUG   [0m pages.home_page:home_page.py:103 No feedback popup detected.
+[32mINFO    [0m pages.login_page:login_page.py:96 Navigating to Best Buy sign-in page …
+[32mINFO    [0m pages.base_page:base_page.py:34 Navigating to: https://www.bestbuy.com/identity/global/signin
+[32mINFO    [0m pages.login_page:login_page.py:99 Sign-in page loaded.
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\info_TC_NEG_01_login_page_20260521_134150_003488.png
+[32mINFO    [0m pages.login_page:login_page.py:102 Entering email: invalid_user@example.com
+[35mDEBUG   [0m pages.base_page:base_page.py:116 Typed 'invalid_user@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\info_TC_NEG_01_email_entered_20260521_134150_622729.png
+[32mINFO    [0m pages.login_page:login_page.py:110 Clicking Sign In button …
+[35mDEBUG   [0m pages.base_page:base_page.py:107 Clicked: ('css selector', "button[data-testid='sign-in-button'], button[type='submit'], .cia-form__controls__submit, button.btn-primary")
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\info_TC_NEG_01_after_email_continue_20260521_134154_079192.png
+[32mINFO    [0m tests.test_search:test_search.py:282 Error shown: False | URL: https://www.bestbuy.com/identity/signin/referCreate?token=tid%3Ab4cfd376-54ec-11f1-a8c1-0674357984c9 | Logged in: False
+[32mINFO    [0m utils.screenshot:screenshot.py:33 Screenshot saved: screenshots\pass_TC_NEG_01_final_error_check_20260521_134308_092542.png
+[32mINFO    [0m tests.test_search:test_search.py:292 TC_NEG_01 PASSED — invalid credentials correctly rejected.
+[32mINFO    [0m conftest:conftest.py:39 Tearing down WebDriver …
+[32mINFO    [0m conftest:conftest.py:41 WebDriver closed.

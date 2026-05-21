@@ -1,0 +1,27 @@
+2026-05-21 13:34:03 | INFO     | conftest | ============================================================
+2026-05-21 13:34:03 | INFO     | conftest | Setting up WebDriver …
+2026-05-21 13:34:03 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 13:34:03 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 13:34:05 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 13:34:05 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 13:34:05 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 13:34:19 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 13:34:30 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 13:34:41 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 13:34:51 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 13:35:02 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 13:35:12 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 13:35:12 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 13:35:23 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 13:35:33 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 13:35:33 | INFO     | pages.search_page | Searching for: 'Samsung TV'
+2026-05-21 13:35:49 | INFO     | pages.search_page | Search submitted for: 'Samsung TV'
+2026-05-21 13:35:49 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_POS_02_search_submitted_20260521_133549_387851.png
+2026-05-21 13:35:50 | INFO     | tests.test_search | Fetched 4 result titles.
+2026-05-21 13:35:50 | INFO     | tests.test_search | Matching: 4/4 (100%)
+2026-05-21 13:35:50 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_02_titles_check_20260521_133550_727772.png
+2026-05-21 13:35:51 | INFO     | tests.test_search | TC_POS_02 PASSED — result titles match query.
+2026-05-21 13:35:51 | INFO     | conftest | TEST PASSED: test_result_titles_match_query
+2026-05-21 13:35:51 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_test_result_titles_match_query_20260521_133551_046180.png
+2026-05-21 13:35:51 | INFO     | conftest | Tearing down WebDriver …
+2026-05-21 13:35:54 | INFO     | conftest | WebDriver closed.
