@@ -1,0 +1,75 @@
+Feature: End-to-End Search and Cart Journey # features/e2e_search_journey.feature:6
+  As a signed-in Best Buy user
+  I want to search for a product and add it to my cart
+  So that I can purchase it
+  @e2e @blocker
+  Scenario: E2E — Login, search for laptop, add first available item to cart  # features/e2e_search_journey.feature:12
+    Given I open the Best Buy homepage                                        # features/steps/search_steps.py:47
+    And the homepage is loaded successfully                                   # features/steps/search_steps.py:58
+    When I login with credentials from test_data                              # features/steps/search_steps.py:121
+    Then I should be logged in or continue as guest                           # features/steps/search_steps.py:317
+    When I search for the e2e product query                                   # features/steps/search_steps.py:113
+    Then the search results page should load                                  # features/steps/search_steps.py:327
+    And at least 1 result should be present on page 1                         # features/steps/search_steps.py:340
+    When I add the first available item to cart from the results page         # features/steps/search_steps.py:186
+    Then the item should be added to cart successfully                        # features/steps/search_steps.py:352
+
+Feature: Best Buy Search Bar # features/search.feature:6
+  As a user of Best Buy
+  I want to use the search bar to find products
+  So that I can browse and purchase items I need
+  Background:   # features/search.feature:11
+
+  @positive @critical
+  Scenario: TC_POS_01 — Valid product search returns results  # features/search.feature:18
+    Given I open the Best Buy homepage                        # features/steps/search_steps.py:47
+    And the homepage is loaded successfully                   # features/steps/search_steps.py:58
+    Given I am on the Best Buy homepage                       # features/steps/search_steps.py:66
+    When I search for the "basic_search" product query        # features/steps/search_steps.py:87
+    Then the URL should indicate a search results page        # features/steps/search_steps.py:197
+    And at least 1 product result should be visible           # features/steps/search_steps.py:207
+
+  @positive @normal
+  Scenario: TC_POS_02 — Search result titles match the query keyword           # features/search.feature:25
+    Given I open the Best Buy homepage                                         # features/steps/search_steps.py:47
+    And the homepage is loaded successfully                                    # features/steps/search_steps.py:58
+    Given I am on the Best Buy homepage                                        # features/steps/search_steps.py:66
+    When I search for the "title_match" product query                          # features/steps/search_steps.py:87
+    Then the results page should load successfully                             # features/steps/search_steps.py:216
+    And at least 30 percent of result titles should contain a relevant keyword # features/steps/search_steps.py:226
+
+  @positive @minor
+  Scenario: TC_POS_03 — Search bar retains the typed query after search  # features/search.feature:32
+    Given I open the Best Buy homepage                                   # features/steps/search_steps.py:47
+    And the homepage is loaded successfully                              # features/steps/search_steps.py:58
+    Given I am on the Best Buy homepage                                  # features/steps/search_steps.py:66
+    When I search for the "search_bar_retain" product query              # features/steps/search_steps.py:87
+    Then the search bar should still display the typed query             # features/steps/search_steps.py:240
+
+  @positive @normal
+  Scenario: TC_POS_04 — Gibberish query is handled gracefully       # features/search.feature:38
+    Given I open the Best Buy homepage                              # features/steps/search_steps.py:47
+    And the homepage is loaded successfully                         # features/steps/search_steps.py:58
+    Given I am on the Best Buy homepage                             # features/steps/search_steps.py:66
+    When I search for the "gibberish" product query                 # features/steps/search_steps.py:87
+    Then the site should not show a server error                    # features/steps/search_steps.py:249
+    And the site should either show results or a no-results message # features/steps/search_steps.py:260
+
+  @negative @critical
+  Scenario: TC_NEG_01 — Invalid login credentials show error message                 # features/search.feature:47
+    Given I open the Best Buy homepage                                               # features/steps/search_steps.py:47
+    And the homepage is loaded successfully                                          # features/steps/search_steps.py:58
+    Given I navigate to the Best Buy login page                                      # features/steps/search_steps.py:75
+    When I enter invalid login credentials                                           # features/steps/search_steps.py:138
+    Then the login should be rejected                                                # features/steps/search_steps.py:282
+    And an error message should be shown or the user should remain on the login page # features/steps/search_steps.py:301
+
+  @negative @minor
+  Scenario: TC_NEG_02 — Special characters search is handled gracefully  # features/search.feature:54
+    Given I open the Best Buy homepage                                   # features/steps/search_steps.py:47
+    And the homepage is loaded successfully                              # features/steps/search_steps.py:58
+    Given I am on the Best Buy homepage                                  # features/steps/search_steps.py:66
+    When I search for the "special_characters" negative query            # features/steps/search_steps.py:100
+    Then the site should not show a server error                         # features/steps/search_steps.py:249
+    And the search should return zero results or a no-results message    # features/steps/search_steps.py:271
+

@@ -1,0 +1,27 @@
+{
+  "bestbuy": {
+    "email": "your_email@example.com",
+    "password": "your_password_here"
+  },
+  "search": {
+    "positive_queries": {
+      "basic_search": "laptop",
+      "title_match": "Samsung TV",
+      "search_bar_retain": "headphones",
+      "gibberish": "xyzabc123notaproduct"
+    },
+    "negative_queries": {
+      "special_characters": "!@#$%"
+    },
+    "title_match_keywords": ["samsung", "tv", "television", "qled", "oled"],
+    "title_match_ratio_threshold": 0.3,
+    "e2e_query": "laptop"
+  },
+  "login": {
+    "invalid_email": "invalid_user@example.com",
+    "invalid_password": "wrongpassword123"
+  },
+  "pagination": {
+    "min_pages": 3
+  }
+}

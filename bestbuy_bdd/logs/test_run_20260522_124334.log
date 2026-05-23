@@ -1,0 +1,304 @@
+2026-05-22 12:43:35 | INFO     | environment | ============================================================
+2026-05-22 12:43:35 | INFO     | environment | Best Buy BDD Test Suite starting …
+2026-05-22 12:43:35 | INFO     | environment | ============================================================
+2026-05-22 12:43:35 | INFO     | environment | ============================================================
+2026-05-22 12:43:35 | INFO     | environment | Starting scenario: E2E — Login, search for laptop, add first available item to cart
+2026-05-22 12:43:35 | INFO     | environment | ============================================================
+2026-05-22 12:43:35 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-22 12:43:35 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-22 12:43:37 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-22 12:43:37 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:43:37 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:43:56 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:44:06 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:44:17 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 12:44:27 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 12:44:38 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 12:44:48 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 12:44:48 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 12:44:59 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 12:45:09 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 12:45:09 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 12:45:09 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-22 12:45:10 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-22 12:45:10 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260522_124510_128708.png
+2026-05-22 12:45:10 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-22 12:45:10 | INFO     | pages.login_page | Navigating to Best Buy sign-in page …
+2026-05-22 12:45:10 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com/identity/global/signin
+2026-05-22 12:45:18 | INFO     | pages.login_page | Sign-in page loaded.
+2026-05-22 12:45:18 | INFO     | pages.login_page | Entering email: your_email@example.com
+2026-05-22 12:45:19 | DEBUG    | pages.base_page | Typed 'your_email@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+2026-05-22 12:45:19 | INFO     | pages.login_page | Entering password …
+2026-05-22 12:45:40 | WARNING  | pages.base_page | Element not visible after 15s: ('css selector', "#fld-p1, input[type='password'], input[name='password'], [data-testid='password-input']")
+2026-05-22 12:45:40 | ERROR    | pages.login_page | Login failed with exception: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72e64a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff72e64a950+14eb0]
+	chromedriver!(No symbol) [0x7ff72e3bd6ed]
+	chromedriver!(No symbol) [0x7ff72e416cfe]
+	chromedriver!(No symbol) [0x7ff72e41700c]
+	chromedriver!(No symbol) [0x7ff72e467cb7]
+	chromedriver!(No symbol) [0x7ff72e46483b]
+	chromedriver!(No symbol) [0x7ff72e4090e8]
+	chromedriver!(No symbol) [0x7ff72e409fc3]
+	chromedriver!GetHandleVerifier [0x7ff72e960149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff72e95a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff72e97c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff72e667cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff72e67087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff72e6540e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff72e654296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff72e638737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffc2a65e957+17]
+	ntdll!RtlUserThreadStart [0x7ffc2b44427c+2c]
+
+2026-05-22 12:45:40 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_after_login_20260522_124540_701939.png
+2026-05-22 12:45:40 | WARNING  | builtins | Login failed — continuing as guest. Update email/password in config/test_data.json.
+2026-05-22 12:45:40 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:45:40 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:45:54 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:46:05 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:46:15 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 12:46:26 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 12:46:37 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 12:46:47 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 12:46:47 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 12:46:58 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 12:47:08 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 12:47:08 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 12:47:08 | INFO     | builtins | E2E: continuing as guest.
+2026-05-22 12:47:08 | INFO     | builtins | E2E: searching for 'laptop'
+2026-05-22 12:47:08 | INFO     | pages.search_page | Searching for: 'laptop'
+2026-05-22 12:47:17 | INFO     | pages.search_page | Search submitted for: 'laptop'
+2026-05-22 12:47:17 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_search_submitted_20260522_124717_506452.png
+2026-05-22 12:47:18 | INFO     | builtins | E2E results URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=laptop | Title: laptop - Best Buy
+2026-05-22 12:47:18 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_results_page_20260522_124718_075353.png
+2026-05-22 12:47:37 | INFO     | builtins | E2E Page 1: 37 results
+2026-05-22 12:47:37 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_page1_results_20260522_124737_760118.png
+2026-05-22 12:47:38 | INFO     | pages.search_page | Found 8 Add to Cart buttons on results page.
+2026-05-22 12:47:38 | INFO     | pages.search_page | Clicking Add to Cart button 1: 'add to cart'
+2026-05-22 12:47:41 | INFO     | pages.search_page | Add to Cart clicked successfully.
+2026-05-22 12:47:41 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_E2E_add_to_cart_20260522_124741_101459.png
+2026-05-22 12:47:41 | INFO     | builtins | Add to cart result: True
+2026-05-22 12:47:42 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_item_added_20260522_124741_812885.png
+2026-05-22 12:47:42 | INFO     | builtins | E2E TEST PASSED — Login → Search → Add to Cart.
+2026-05-22 12:47:42 | INFO     | environment | SCENARIO PASSED: E2E — Login, search for laptop, add first available item to cart
+2026-05-22 12:47:42 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_E2E_—_Login,_search_for_laptop,_add_first_available_item_to_cart_20260522_124742_225459.png
+2026-05-22 12:47:42 | INFO     | environment | Tearing down WebDriver …
+2026-05-22 12:47:46 | INFO     | environment | WebDriver closed.
+2026-05-22 12:47:50 | INFO     | environment | ============================================================
+2026-05-22 12:47:50 | INFO     | environment | Starting scenario: TC_POS_01 — Valid product search returns results
+2026-05-22 12:47:50 | INFO     | environment | ============================================================
+2026-05-22 12:47:50 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-22 12:47:50 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-22 12:47:52 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-22 12:47:52 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:47:52 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:48:07 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:48:18 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:48:28 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 12:48:39 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 12:48:50 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 12:49:00 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 12:49:00 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 12:49:11 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 12:49:21 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 12:49:21 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 12:49:21 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-22 12:49:21 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-22 12:49:22 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260522_124921_953083.png
+2026-05-22 12:49:22 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-22 12:49:22 | INFO     | builtins | On Best Buy homepage — ready for test.
+2026-05-22 12:49:22 | INFO     | builtins | Searching for 'laptop' (key: basic_search)
+2026-05-22 12:49:22 | INFO     | pages.search_page | Searching for: 'laptop'
+2026-05-22 12:49:42 | INFO     | pages.search_page | Search submitted for: 'laptop'
+2026-05-22 12:49:43 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_search_basic_search_20260522_124942_457624.png
+2026-05-22 12:49:43 | INFO     | builtins | Results URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=laptop
+2026-05-22 12:49:46 | INFO     | builtins | Results found: 37
+2026-05-22 12:49:46 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_01_results_20260522_124946_332026.png
+2026-05-22 12:49:46 | INFO     | environment | SCENARIO PASSED: TC_POS_01 — Valid product search returns results
+2026-05-22 12:49:46 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_01_—_Valid_product_search_returns_results_20260522_124946_557062.png
+2026-05-22 12:49:46 | INFO     | environment | Tearing down WebDriver …
+2026-05-22 12:49:49 | INFO     | environment | WebDriver closed.
+2026-05-22 12:49:53 | INFO     | environment | ============================================================
+2026-05-22 12:49:53 | INFO     | environment | Starting scenario: TC_POS_02 — Search result titles match the query keyword
+2026-05-22 12:49:53 | INFO     | environment | ============================================================
+2026-05-22 12:49:53 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-22 12:49:53 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-22 12:49:55 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-22 12:49:55 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:49:55 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:50:11 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:50:22 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:50:32 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 12:50:43 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 12:50:53 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 12:51:04 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 12:51:04 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 12:51:14 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 12:51:25 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 12:51:25 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 12:51:25 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-22 12:51:25 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-22 12:51:25 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260522_125125_605602.png
+2026-05-22 12:51:25 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-22 12:51:25 | INFO     | builtins | On Best Buy homepage — ready for test.
+2026-05-22 12:51:25 | INFO     | builtins | Searching for 'Samsung TV' (key: title_match)
+2026-05-22 12:51:25 | INFO     | pages.search_page | Searching for: 'Samsung TV'
+2026-05-22 12:51:33 | INFO     | pages.search_page | Search submitted for: 'Samsung TV'
+2026-05-22 12:51:33 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_search_title_match_20260522_125133_528623.png
+2026-05-22 12:51:42 | INFO     | builtins | Results URL: https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=Samsung%20TV | Title: Samsung TV - Best Buy
+2026-05-22 12:51:43 | INFO     | builtins | Fetched 4 result titles.
+2026-05-22 12:51:43 | INFO     | builtins | Matching: 4/4 (100%)
+2026-05-22 12:51:43 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_02_titles_check_20260522_125143_278047.png
+2026-05-22 12:51:43 | INFO     | environment | SCENARIO PASSED: TC_POS_02 — Search result titles match the query keyword
+2026-05-22 12:51:44 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_02_—_Search_result_titles_match_the_query_keyword_20260522_125143_671542.png
+2026-05-22 12:51:44 | INFO     | environment | Tearing down WebDriver …
+2026-05-22 12:51:46 | INFO     | environment | WebDriver closed.
+2026-05-22 12:51:50 | INFO     | environment | ============================================================
+2026-05-22 12:51:50 | INFO     | environment | Starting scenario: TC_POS_03 — Search bar retains the typed query after search
+2026-05-22 12:51:50 | INFO     | environment | ============================================================
+2026-05-22 12:51:50 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-22 12:51:50 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-22 12:51:52 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-22 12:51:52 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:51:52 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:52:07 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:52:17 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:52:28 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 12:52:39 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 12:52:49 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 12:53:00 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 12:53:00 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 12:53:10 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 12:53:21 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 12:53:21 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 12:53:21 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-22 12:53:21 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-22 12:53:21 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260522_125321_361643.png
+2026-05-22 12:53:21 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-22 12:53:21 | INFO     | builtins | On Best Buy homepage — ready for test.
+2026-05-22 12:53:21 | INFO     | builtins | Searching for 'headphones' (key: search_bar_retain)
+2026-05-22 12:53:21 | INFO     | pages.search_page | Searching for: 'headphones'
+2026-05-22 12:53:38 | INFO     | pages.search_page | Search submitted for: 'headphones'
+2026-05-22 12:53:39 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_search_search_bar_retain_20260522_125338_843241.png
+2026-05-22 12:53:39 | INFO     | builtins | Search bar retained: 'headphones'
+2026-05-22 12:53:39 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_03_input_retained_20260522_125339_316217.png
+2026-05-22 12:53:39 | INFO     | environment | SCENARIO PASSED: TC_POS_03 — Search bar retains the typed query after search
+2026-05-22 12:53:40 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_03_—_Search_bar_retains_the_typed_query_after_search_20260522_125339_691973.png
+2026-05-22 12:53:40 | INFO     | environment | Tearing down WebDriver …
+2026-05-22 12:53:43 | INFO     | environment | WebDriver closed.
+2026-05-22 12:53:47 | INFO     | environment | ============================================================
+2026-05-22 12:53:47 | INFO     | environment | Starting scenario: TC_POS_04 — Gibberish query is handled gracefully
+2026-05-22 12:53:47 | INFO     | environment | ============================================================
+2026-05-22 12:53:47 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-22 12:53:47 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-22 12:53:48 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-22 12:53:48 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:53:48 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:54:03 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:54:14 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:54:24 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 12:54:35 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 12:54:45 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 12:54:56 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 12:54:56 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 12:55:06 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 12:55:17 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 12:55:17 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 12:55:17 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-22 12:55:17 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-22 12:55:17 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260522_125517_517693.png
+2026-05-22 12:55:17 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-22 12:55:17 | INFO     | builtins | On Best Buy homepage — ready for test.
+2026-05-22 12:55:17 | INFO     | builtins | Searching for 'xyzabc123notaproduct' (key: gibberish)
+2026-05-22 12:55:17 | INFO     | pages.search_page | Searching for: 'xyzabc123notaproduct'
+2026-05-22 12:55:32 | INFO     | pages.search_page | Search submitted for: 'xyzabc123notaproduct'
+2026-05-22 12:55:32 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_search_gibberish_20260522_125532_306258.png
+2026-05-22 12:55:32 | INFO     | builtins | Page title: xyzabc123notaproduct - Best Buy
+2026-05-22 12:55:57 | INFO     | builtins | Results: 24 | No-results msg: False
+2026-05-22 12:55:57 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_04_graceful_20260522_125557_472358.png
+2026-05-22 12:55:57 | INFO     | environment | SCENARIO PASSED: TC_POS_04 — Gibberish query is handled gracefully
+2026-05-22 12:55:58 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_POS_04_—_Gibberish_query_is_handled_gracefully_20260522_125557_870108.png
+2026-05-22 12:55:58 | INFO     | environment | Tearing down WebDriver …
+2026-05-22 12:56:00 | INFO     | environment | WebDriver closed.
+2026-05-22 12:56:05 | INFO     | environment | ============================================================
+2026-05-22 12:56:05 | INFO     | environment | Starting scenario: TC_NEG_01 — Invalid login credentials show error message
+2026-05-22 12:56:05 | INFO     | environment | ============================================================
+2026-05-22 12:56:05 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-22 12:56:05 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-22 12:56:06 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-22 12:56:06 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:56:06 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:56:21 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:56:32 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:56:42 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 12:56:53 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 12:57:03 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 12:57:14 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 12:57:14 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 12:57:24 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 12:57:35 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 12:57:35 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 12:57:35 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-22 12:57:35 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-22 12:57:35 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260522_125735_620023.png
+2026-05-22 12:57:35 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-22 12:57:35 | INFO     | pages.login_page | Navigating to Best Buy sign-in page …
+2026-05-22 12:57:35 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com/identity/global/signin
+2026-05-22 12:57:41 | INFO     | pages.login_page | Sign-in page loaded.
+2026-05-22 12:57:41 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_login_page_20260522_125741_475380.png
+2026-05-22 12:57:41 | INFO     | builtins | Navigated to Best Buy login page.
+2026-05-22 12:57:41 | INFO     | pages.login_page | Entering email: invalid_user@example.com
+2026-05-22 12:57:42 | DEBUG    | pages.base_page | Typed 'invalid_user@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+2026-05-22 12:57:42 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_email_entered_20260522_125742_202617.png
+2026-05-22 12:57:42 | INFO     | pages.login_page | Clicking Sign In button …
+2026-05-22 12:57:44 | DEBUG    | pages.base_page | Clicked: ('css selector', "button[data-testid='sign-in-button'], button[type='submit'], .cia-form__controls__submit, button.btn-primary")
+2026-05-22 12:57:47 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_after_email_20260522_125747_226182.png
+2026-05-22 12:59:01 | INFO     | builtins | Error: False | URL: https://www.bestbuy.com/identity/signin/referCreate?token=tid%3Ab5655265-55af-11f1-ae2d-0a75863fb9d5 | Logged in: False
+2026-05-22 12:59:01 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_rejection_check_20260522_125901_280010.png
+2026-05-22 12:59:12 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_error_check_20260522_125911_969123.png
+2026-05-22 12:59:12 | INFO     | builtins | TC_NEG_01 PASSED — invalid credentials correctly rejected.
+2026-05-22 12:59:12 | INFO     | environment | SCENARIO PASSED: TC_NEG_01 — Invalid login credentials show error message
+2026-05-22 12:59:12 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_—_Invalid_login_credentials_show_error_message_20260522_125912_123354.png
+2026-05-22 12:59:12 | INFO     | environment | Tearing down WebDriver …
+2026-05-22 12:59:14 | INFO     | environment | WebDriver closed.
+2026-05-22 12:59:18 | INFO     | environment | ============================================================
+2026-05-22 12:59:18 | INFO     | environment | Starting scenario: TC_NEG_02 — Special characters search is handled gracefully
+2026-05-22 12:59:18 | INFO     | environment | ============================================================
+2026-05-22 12:59:18 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-22 12:59:18 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-22 12:59:20 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-22 12:59:20 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-22 12:59:20 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-22 12:59:36 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-22 12:59:46 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-22 12:59:57 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-22 13:00:07 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-22 13:00:18 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-22 13:00:28 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-22 13:00:28 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-22 13:00:39 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-22 13:00:49 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-22 13:00:49 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-22 13:00:49 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-22 13:00:49 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-22 13:00:50 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260522_130049_937739.png
+2026-05-22 13:00:50 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-22 13:00:50 | INFO     | builtins | On Best Buy homepage — ready for test.
+2026-05-22 13:00:50 | INFO     | builtins | Searching for negative query '!@#$%' (key: special_characters)
+2026-05-22 13:00:50 | INFO     | pages.search_page | Searching for: '!@#$%'
+2026-05-22 13:01:20 | WARNING  | pages.base_page | Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+2026-05-22 13:01:20 | INFO     | pages.search_page | Search submitted for: '!@#$%'
+2026-05-22 13:01:20 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_search_neg_special_characters_20260522_130120_193125.png
+2026-05-22 13:01:20 | INFO     | builtins | Page title: !@#$% - Best Buy
+2026-05-22 13:01:41 | WARNING  | pages.base_page | Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+2026-05-22 13:01:41 | INFO     | builtins | No-results msg: True | Items: 0
+2026-05-22 13:01:41 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_02_graceful_20260522_130141_552273.png
+2026-05-22 13:01:41 | INFO     | environment | SCENARIO PASSED: TC_NEG_02 — Special characters search is handled gracefully
+2026-05-22 13:01:41 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_02_—_Special_characters_search_is_handled_gracefully_20260522_130141_747269.png
+2026-05-22 13:01:41 | INFO     | environment | Tearing down WebDriver …
+2026-05-22 13:01:44 | INFO     | environment | WebDriver closed.
+2026-05-22 13:01:48 | INFO     | environment | ============================================================
+2026-05-22 13:01:48 | INFO     | environment | Best Buy BDD Test Suite complete.
+2026-05-22 13:01:48 | INFO     | environment | ============================================================

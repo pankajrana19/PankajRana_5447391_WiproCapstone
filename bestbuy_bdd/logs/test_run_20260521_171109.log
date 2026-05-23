@@ -1,0 +1,83 @@
+2026-05-21 17:11:09 | INFO     | environment | ============================================================
+2026-05-21 17:11:09 | INFO     | environment | Best Buy BDD Test Suite starting …
+2026-05-21 17:11:09 | INFO     | environment | ============================================================
+2026-05-21 17:11:09 | INFO     | environment | ============================================================
+2026-05-21 17:11:09 | INFO     | environment | Starting scenario: TC_NEG_01 — Invalid login credentials show error message
+2026-05-21 17:11:09 | INFO     | environment | ============================================================
+2026-05-21 17:11:09 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 17:11:09 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 17:11:12 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 17:11:12 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 17:11:12 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 17:11:28 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 17:11:39 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 17:11:49 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 17:12:00 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 17:12:10 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 17:12:21 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 17:12:21 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 17:12:32 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 17:12:42 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 17:12:42 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 17:12:42 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-21 17:12:42 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-21 17:12:42 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260521_171242_634182.png
+2026-05-21 17:12:42 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-21 17:12:42 | INFO     | pages.login_page | Navigating to Best Buy sign-in page …
+2026-05-21 17:12:42 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com/identity/global/signin
+2026-05-21 17:12:47 | INFO     | pages.login_page | Sign-in page loaded.
+2026-05-21 17:12:47 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_login_page_20260521_171247_451852.png
+2026-05-21 17:12:47 | INFO     | builtins | Navigated to Best Buy login page.
+2026-05-21 17:12:47 | INFO     | pages.login_page | Entering email: invalid_user@example.com
+2026-05-21 17:12:47 | DEBUG    | pages.base_page | Typed 'invalid_user@example.com' into: ('css selector', "#fld-e, input[type='email'], input[name='email'], [data-testid='email-input'], input[autocomplete='email']")
+2026-05-21 17:12:47 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_email_entered_20260521_171247_803998.png
+2026-05-21 17:12:47 | INFO     | pages.login_page | Clicking Sign In button …
+2026-05-21 17:12:48 | DEBUG    | pages.base_page | Clicked: ('css selector', "button[data-testid='sign-in-button'], button[type='submit'], .cia-form__controls__submit, button.btn-primary")
+2026-05-21 17:12:51 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_TC_NEG_01_after_email_20260521_171251_133599.png
+2026-05-21 17:14:05 | INFO     | builtins | Error: False | URL: https://www.bestbuy.com/identity/signin/referCreate?token=tid%3A2e1974a5-550a-11f1-a72f-0a9e8518481f | Logged in: False
+2026-05-21 17:14:05 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_rejection_check_20260521_171405_037882.png
+2026-05-21 17:14:15 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_error_check_20260521_171415_633948.png
+2026-05-21 17:14:15 | INFO     | builtins | TC_NEG_01 PASSED — invalid credentials correctly rejected.
+2026-05-21 17:14:15 | INFO     | environment | SCENARIO PASSED: TC_NEG_01 — Invalid login credentials show error message
+2026-05-21 17:14:15 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_01_—_Invalid_login_credentials_show_error_message_20260521_171415_714991.png
+2026-05-21 17:14:15 | INFO     | environment | Tearing down WebDriver …
+2026-05-21 17:14:19 | INFO     | environment | WebDriver closed.
+2026-05-21 17:14:23 | INFO     | environment | ============================================================
+2026-05-21 17:14:23 | INFO     | environment | Starting scenario: TC_NEG_02 — Special characters search is handled gracefully
+2026-05-21 17:14:23 | INFO     | environment | ============================================================
+2026-05-21 17:14:23 | INFO     | utils.driver_factory | Initialising Chrome WebDriver …
+2026-05-21 17:14:23 | INFO     | utils.driver_factory | ChromeDriver path: C:\Users\ACER\.wdm\chromedriver-win64\chromedriver-win64\chromedriver.exe
+2026-05-21 17:14:25 | INFO     | utils.driver_factory | Chrome WebDriver initialised successfully.
+2026-05-21 17:14:25 | INFO     | pages.home_page | Opening Best Buy home page …
+2026-05-21 17:14:25 | INFO     | pages.base_page | Navigating to: https://www.bestbuy.com
+2026-05-21 17:14:38 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', "[data-testid='us-link']")
+2026-05-21 17:14:49 | WARNING  | pages.base_page | Element not clickable after 2s: ('css selector', '.us-link')
+2026-05-21 17:15:00 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[contains(@href,'bestbuy.com') and contains(translate(.,'us','US'),'United States')]")
+2026-05-21 17:15:10 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//a[normalize-space()='United States']")
+2026-05-21 17:15:21 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//button[normalize-space()='United States']")
+2026-05-21 17:15:31 | WARNING  | pages.base_page | Element not clickable after 2s: ('xpath', "//*[contains(@class,'us') and (normalize-space()='United States' or contains(normalize-space(),'United States'))]")
+2026-05-21 17:15:31 | INFO     | pages.home_page | No country-selection modal detected — proceeding directly.
+2026-05-21 17:15:42 | WARNING  | pages.base_page | Element not clickable after 3s: ('xpath', "//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')] | //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'no thank')]")
+2026-05-21 17:15:52 | WARNING  | pages.base_page | Element not clickable after 3s: ('css selector', "#fsrFocusFirst, .fsrButton, [id*='fsrFocus'], [class*='fsr-button'], [id*='fsr'] button")
+2026-05-21 17:15:52 | DEBUG    | pages.home_page | No feedback popup detected.
+2026-05-21 17:15:52 | INFO     | environment | Browser ready — Best Buy homepage loaded.
+2026-05-21 17:15:52 | INFO     | builtins | Best Buy homepage context initialised.
+2026-05-21 17:15:52 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_homepage_loaded_20260521_171552_840951.png
+2026-05-21 17:15:53 | INFO     | builtins | Homepage confirmed loaded.
+2026-05-21 17:15:53 | INFO     | builtins | On Best Buy homepage — ready for test.
+2026-05-21 17:15:53 | INFO     | builtins | Searching for negative query '!@#$%' (key: special_characters)
+2026-05-21 17:15:53 | INFO     | pages.search_page | Searching for: '!@#$%'
+2026-05-21 17:16:20 | WARNING  | pages.base_page | Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+2026-05-21 17:16:20 | INFO     | pages.search_page | Search submitted for: '!@#$%'
+2026-05-21 17:16:20 | INFO     | utils.screenshot | Screenshot saved: screenshots\info_search_neg_special_characters_20260521_171620_056079.png
+2026-05-21 17:16:20 | INFO     | builtins | Page title: !@#$% - Best Buy
+2026-05-21 17:16:41 | WARNING  | pages.base_page | Elements not present after 15s: ('css selector', "li.sku-item, div.sku-item, [class*='sku-item'], li.slContainer, .product-list-item, [data-testid='list-item']")
+2026-05-21 17:16:41 | INFO     | builtins | No-results msg: True | Items: 0
+2026-05-21 17:16:41 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_02_graceful_20260521_171641_318042.png
+2026-05-21 17:16:41 | INFO     | environment | SCENARIO PASSED: TC_NEG_02 — Special characters search is handled gracefully
+2026-05-21 17:16:41 | INFO     | utils.screenshot | Screenshot saved: screenshots\pass_TC_NEG_02_—_Special_characters_search_is_handled_gracefully_20260521_171641_437142.png
+2026-05-21 17:16:41 | INFO     | environment | Tearing down WebDriver …
+2026-05-21 17:16:44 | INFO     | environment | WebDriver closed.
+2026-05-21 17:16:48 | INFO     | environment | ============================================================
+2026-05-21 17:16:48 | INFO     | environment | Best Buy BDD Test Suite complete.
+2026-05-21 17:16:48 | INFO     | environment | ============================================================
